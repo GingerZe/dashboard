@@ -310,6 +310,8 @@
   flex-grow: 1;
 }
 
-/* .card.textmessages > .searchbar {
-  justify-items: end;
-} */
+.messagepage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
