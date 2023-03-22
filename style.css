@@ -4,6 +4,11 @@
     box-sizing: border-box;
   }
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
   li {
     list-style: none;
   }
@@ -11,6 +16,8 @@
   body {
     font-family: 'Courier New', Courier, monospace;
   }
+
+
   /* MAIN */
 
   .maingrid {
@@ -104,7 +111,7 @@
     font-weight: bold;
   }
   
-
+/* BUTTONS */
   .buttons {
     display: flex;
     align-items: center;
@@ -122,6 +129,16 @@
     color: white;
   }
 
+  /* gray button */
+
+  .graybuttons {
+    background-color: #4b4b4b6b;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+    width: max-content;
+    margin-top: 10px;
+  }
 /* SIDEBAR */
 
 .sidebar {
@@ -146,6 +163,10 @@
     margin-top: 60px;
 }
 
+.menu li:hover {
+    background-color: rgba(255, 255, 255, 0.158);
+}
+
 /* MAIN CONTENT */
 
   .maincontent {
@@ -163,7 +184,6 @@
   .leftcontent {
     grid-area: contentleft;
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: min-content;
     gap: 20px;
@@ -220,3 +240,40 @@
         gap: 20px;
     }
 
+/* PROFILE PAGE */
+
+.leftcontent.profile {
+  align-items: center;
+  flex-wrap: nowrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  min-width: 350px;
+}
+
+.card.profile {
+  /* display: flex; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-column: span 2;
+  align-items: center;
+  
+  
+}
+
+.avatar {
+  width: 250px;
+}
+
+.profilephoto {
+  width: max-content;
+  
+}
+
+.profileinfo {
+  flex: 1;
+  line-height: 1.5rem;
+}
+
+.profileroles {
+  flex: 1;
+}
