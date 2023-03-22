@@ -253,7 +253,6 @@
 }
 
 .card.profile {
-  /* display: flex; */
   flex-direction: row;
   flex-wrap: wrap;
   grid-column: span 2;
@@ -276,6 +275,41 @@
   line-height: 1.5rem;
 }
 
-/* .profileroles {
-  flex: 1;
+/* TEXT MESSAGES */
+
+.card.textmessages {
+  gap: 5px;  
+}
+
+.searchtextmessages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.message > * {
+  padding: 5px 10px;
+}
+
+.message:hover {
+  background-color: #1992D460;
+}
+
+.subject {
+  flex-grow: 2;
+}
+
+.sender {
+  flex-grow: 1;
+}
+
+/* .card.textmessages > .searchbar {
+  justify-items: end;
 } */
