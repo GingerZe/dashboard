@@ -162,7 +162,9 @@
 .sidebar ul + ul {
     margin-top: 60px;
 }
-
+.menu a {
+    padding: 10px 100% 10px 0;
+}
 .menu li:hover {
     background-color: rgba(255, 255, 255, 0.158);
 }
@@ -269,11 +271,11 @@
   
 }
 
-.profileinfo {
+.profileinfo , .profileroles {
   flex: 1;
   line-height: 1.5rem;
 }
 
-.profileroles {
+/* .profileroles {
   flex: 1;
-}
+} */
