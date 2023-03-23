@@ -139,6 +139,15 @@
     width: max-content;
     margin-top: 10px;
   }
+
+  .purplebuttons {
+    background-color: #bb83dbc7;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+    width: max-content;
+    margin-top: 10px;
+  }
 /* SIDEBAR */
 
 .sidebar {
@@ -194,7 +203,6 @@
   }
 
   .leftcontent > h1 {
-    /* grid-column-start: span 1; */
     grid-column: 1 / -1;
   }
 
@@ -213,6 +221,12 @@
     justify-content: end;
     gap: 25px;
   }
+
+  .cardbuttons li {
+    display: flex;
+    align-items: center;
+  }
+
 
     /* RIGHT GRID CONTENT */
 
@@ -242,7 +256,20 @@
         gap: 20px;
     }
 
-/* PROFILE PAGE */
+/* Profile Page    */
+.profilepage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  align-items: center;
+}
+
+.profilebio {
+  grid-column: 1 / -1;
+}
+
+
+/* Settings */
 
 .leftcontent.profile {
   align-items: center;
@@ -253,7 +280,6 @@
 }
 
 .card.profile {
-  /* display: flex; */
   flex-direction: row;
   flex-wrap: wrap;
   grid-column: span 2;
@@ -264,6 +290,7 @@
 
 .avatar {
   width: 250px;
+  display: block;
 }
 
 .profilephoto {
@@ -276,6 +303,78 @@
   line-height: 1.5rem;
 }
 
-/* .profileroles {
-  flex: 1;
-} */
+/* TEXT MESSAGES */
+
+.card.textmessages {
+  gap: 5px;  
+}
+
+.searchtextmessages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.message > * {
+  padding: 5px 10px;
+}
+
+.message:hover {
+  background-color: #1992D460;
+}
+
+.subject {
+  flex-grow: 2;
+}
+
+.sender {
+  flex-grow: 1;
+}
+
+.messagepage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.replyforward {
+  display: flex;
+  gap: 20px;
+}
+
+/* TASKS PAGE */
+
+.maincontent.tasks {
+  grid-template-columns: 1fr;
+}
+
+.taskcontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-template-areas: 
+    "tasks progress review";
+}
+
+.card.task {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.card.task > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasktype {
+  display: grid;
+  row-gap: 20px;
+  align-content: start;
+}
