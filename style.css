@@ -256,7 +256,20 @@
         gap: 20px;
     }
 
-/* PROFILE PAGE */
+/* Profile Page    */
+.profilepage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  align-items: center;
+}
+
+.profilebio {
+  grid-column: 1 / -1;
+}
+
+
+/* Settings */
 
 .leftcontent.profile {
   align-items: center;
@@ -277,6 +290,7 @@
 
 .avatar {
   width: 250px;
+  display: block;
 }
 
 .profilephoto {
