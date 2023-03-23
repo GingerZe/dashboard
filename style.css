@@ -315,3 +315,8 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.replyforward {
+  display: flex;
+  gap: 20px;
+}
