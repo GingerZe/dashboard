@@ -139,6 +139,15 @@
     width: max-content;
     margin-top: 10px;
   }
+
+  .purplebuttons {
+    background-color: #bb83dbc7;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+    width: max-content;
+    margin-top: 10px;
+  }
 /* SIDEBAR */
 
 .sidebar {
@@ -194,7 +203,6 @@
   }
 
   .leftcontent > h1 {
-    /* grid-column-start: span 1; */
     grid-column: 1 / -1;
   }
 
@@ -213,6 +221,12 @@
     justify-content: end;
     gap: 25px;
   }
+
+  .cardbuttons li {
+    display: flex;
+    align-items: center;
+  }
+
 
     /* RIGHT GRID CONTENT */
 
@@ -319,4 +333,34 @@
 .replyforward {
   display: flex;
   gap: 20px;
+}
+
+/* TASKS PAGE */
+
+.maincontent.tasks {
+  grid-template-columns: 1fr;
+}
+
+.taskcontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-template-areas: 
+    "tasks progress review";
+}
+
+.card.task {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.card.task > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tasktype {
+  display: grid;
+  row-gap: 20px;
+  align-content: start;
 }
