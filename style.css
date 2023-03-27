@@ -378,3 +378,9 @@
   row-gap: 20px;
   align-content: start;
 }
+
+/* New Task */
+
+.messagepage textarea {
+  width: 100%;
+}
